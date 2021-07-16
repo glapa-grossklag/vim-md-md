@@ -32,3 +32,5 @@ range.
 | `<Plug>MDCheckboxFill`   | Fill the checkbox on the current line    |
 | `<Plug>MDCheckboxEmpty`  | Empty the checkbox on the current line   |
 | `<Plug>MDCheckboxMake`   | Change the current line to be a checkbox |
+| `<Plug>MDNextLink`       | Jump to the next link                    |
+| `<Plug>MDPrevLink`       | Jump to the previous link                |

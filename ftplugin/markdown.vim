@@ -8,9 +8,8 @@
 "                                    Links                                     "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Find next/previous link
-command -buffer NextLink norm /\[.*\]\(.*\)<CR>
-command -buffer PrevLink norm ?\[.*\]\(.*\)<CR>
+noremap <buffer> <silent> <Plug>MDNextLink     :call search('\v\[.*\]\(.*\)')<CR>
+noremap <buffer> <silent> <Plug>MDPrevLink     :call search('\v\[.*\]\(.*\)', 'b')<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Checkboxes                                  "
