@@ -1,0 +1,30 @@
+*vim-md-md* a collection of small Markdown utilities
+
+     __  __            _       _                       __  __   ____    ~
+    |  \/  | __ _ _ __| | ____| | _____      ___ __   |  \/  | |  _ \   ~
+    | |\/| |/ _` | '__| |/ / _` |/ _ \ \ /\ / / '_ \  | |\/| | | | | |  ~
+    | |  | | (_| | |  |   < (_| | (_) \ V  V /| | | | | |  | |_| |_| |  ~
+    |_|  |_|\__,_|_|  |_|\_\__,_|\___/ \_/\_/ |_| |_| |_|  |_(_)____(_) ~
+                                                                   
+                  A collection of small Markdown utilities.
+                  No assumptions made about file structure,
+               no default mappings -- everything is up to you.
+
+================================================================================
+Section 1: Usage                                               *vim-md-md-Usage*
+
+All of Markdown M.D.'s functionality is made available through plug mappings.
+As an example, to toggle a markdown checkbox using the <Enter> key: >
+    map <Enter> <Plug>MDCheckboxToggle
+<
+
+Key                         Effect~
+<Plug>MDCheckboxToggle......Toggle the checkbox on the current line
+<Plug>MDCheckboxFill........Fill the checkbox on the current line
+<Plug>MDCheckboxEmpty.......Empty the checkbox on the current line
+<Plug>MDCheckboxMake........Change the current line to be a checkbox
+<Plug>MDNextLink............Jump to the next link
+<Plug>MDPrevLink............Jump to the previous link
+
+
+ vim:tw=80:ts=4:ft=help:norl:

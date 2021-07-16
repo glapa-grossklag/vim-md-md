@@ -15,8 +15,7 @@ Plug 'glapa-grossklag/vim-md-md'
 # Usage
 
 All of the features of this plugin are made available through `<Plug>` mappings.
-As an example, this is how one would use toggle a markdown checkbox using the
-`<Enter>` key:
+As an example, to toggle a markdown checkbox using the `<Enter>` key:
 ```vim
 map <Enter> <Plug>MDCheckboxToggle
 ```
