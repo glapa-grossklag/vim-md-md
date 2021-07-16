@@ -23,12 +23,13 @@ let s:checkbox_full = s:bullet_point . '\[[xX]\]'
 " Turn a bullet point into a checkbox
 function s:MDCheckboxMake()
     let l:pos = getpos('.')
+    let l:line = getline('.')
 
-    if getline('.') =~ s:bullet_point
+    if l:line =~ s:bullet_point
         s/\v^(\s*[-*+])\ /\1\ \[\ \]\ /
     else
         " TODO: Change this to a command somehow
-        norm I- [ ]
+        norm I- [ ] 
     endif
 
     call setpos('.', l:pos)
@@ -75,9 +76,6 @@ function s:MDCheckboxToggle()
     endif
 endfunction
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"                               <Plug> Mappings                                "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 noremap <buffer> <silent> <Plug>MDCheckboxMake     :call <SID>MDCheckboxMake()<CR>
 noremap <buffer> <silent> <Plug>MDCheckboxFill     :call <SID>MDCheckboxFill()<CR>
