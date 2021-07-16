@@ -80,7 +80,7 @@ endfunction
 "                               <Plug> Mappings                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-noremap <buffer> <silent> <Plug>MDCheckboxMake     :silent call <SID>MDCheckboxMake()<CR>
-noremap <buffer> <silent> <Plug>MDCheckboxFill     :silent call <SID>MDCheckboxFill()<CR>
-noremap <buffer> <silent> <Plug>MDCheckboxEmpty    :silent call <SID>MDCheckboxEmpty()<CR>
-noremap <buffer> <silent> <Plug>MDCheckboxToggle   :silent call <SID>MDCheckboxToggle()<CR>
+noremap <buffer> <silent> <Plug>MDCheckboxMake     :call <SID>MDCheckboxMake()<CR>
+noremap <buffer> <silent> <Plug>MDCheckboxFill     :call <SID>MDCheckboxFill()<CR>
+noremap <buffer> <silent> <Plug>MDCheckboxEmpty    :call <SID>MDCheckboxEmpty()<CR>
+noremap <buffer> <silent> <Plug>MDCheckboxToggle   :call <SID>MDCheckboxToggle()<CR>
