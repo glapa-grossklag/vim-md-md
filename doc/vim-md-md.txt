@@ -19,10 +19,10 @@ As an example, to toggle a markdown checkbox using the <Enter> key: >
 <
 
 Key                         Effect~
-<Plug>MDCheckboxToggle......Toggle the checkbox on the current line
-<Plug>MDCheckboxFill........Fill the checkbox on the current line
-<Plug>MDCheckboxEmpty.......Empty the checkbox on the current line
-<Plug>MDCheckboxMake........Change the current line to be a checkbox
+<Plug>MDCheckboxToggle......Toggle a checkbox
+<Plug>MDCheckboxFill........Fill a checkbox
+<Plug>MDCheckboxEmpty.......Empty a checkbox
+<Plug>MDCheckboxMake........Change a bullet point to a checkbox
 <Plug>MDNextLink............Jump to the next link
 <Plug>MDPrevLink............Jump to the previous link
 
