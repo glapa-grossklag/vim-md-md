@@ -23,13 +23,9 @@ let s:checkbox_full = s:bullet_point . '\[[xX]\]'
 " Turn a bullet point into a checkbox
 function s:MDCheckboxMake()
     let l:pos = getpos('.')
-    let l:line = getline('.')
 
-    if l:line =~ s:bullet_point
+    if getline('.') =~ s:bullet_point
         s/\v^(\s*[-*+])\ /\1\ \[\ \]\ /
-    else
-        " TODO: Change this to a command somehow
-        norm I- [ ] 
     endif
 
     call setpos('.', l:pos)
@@ -42,8 +38,6 @@ function s:MDCheckboxFill()
 
     if getline('.') =~ s:checkbox_empty
         s/\v^(\s*[-*+])\ \[\ \]/\1\ \[X\]/
-    else
-        echoerr "Not an empty checkbox"
     endif
 
     call setpos('.', l:pos)
@@ -56,8 +50,6 @@ function s:MDCheckboxEmpty()
 
     if getline('.') =~ s:checkbox_full
         s/\v^(\s*[-*+])\ \[[xX]\]/\1\ \[\ \]/
-    else
-        echoerr "Not a full checkbox"
     endif
 
     call setpos('.', l:pos)
@@ -72,7 +64,7 @@ function s:MDCheckboxToggle()
     elseif l:line =~ s:checkbox_full
         call <SID>MDCheckboxEmpty()
     else
-        echoerr "Not a checkbox"
+        call <SID>MDCheckboxMake()
     endif
 endfunction
 
