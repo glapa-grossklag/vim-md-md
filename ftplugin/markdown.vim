@@ -8,8 +8,8 @@
 "                                    Links                                     "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-noremap <buffer> <silent> <Plug>MDNextLink     :call search('\v\[.*\]\(.*\)')<CR>
-noremap <buffer> <silent> <Plug>MDPrevLink     :call search('\v\[.*\]\(.*\)', 'b')<CR>
+noremap <buffer> <silent> <Plug>MDNextLink     :call search('\v\[.*\]\(.*\)')<CR>f(l
+noremap <buffer> <silent> <Plug>MDPrevLink     :call search('\v\[.*\]\(.*\)', 'b')<CR>f(l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Checkboxes                                  "
